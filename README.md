@@ -1,6 +1,8 @@
 # SC-AgeSpePCa
 Single-cell and spatial RNA sequencing identify the age-associated divergent microenvironments and progression patterns in prostate cancer
 
+![Fig 8-01](https://github.com/user-attachments/assets/41d49f12-a669-4520-94ec-c2cd65263ba9)
+
 Brief descriptions of scripts:
 
 1.data_processing.R:
