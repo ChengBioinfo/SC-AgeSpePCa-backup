@@ -13,7 +13,7 @@ Creating Seurat objects from raw matrix, and carrying out quality control.
 
 Removing batch effects using Harmony. Clustering, annotation and functional analysis of all cells.
 
-3.Doublet and InferCNV.R
+3.Doublet_and_InferCNV.R
 
 Removing doublets and infering malignant epithelia with inferCNV.
 
