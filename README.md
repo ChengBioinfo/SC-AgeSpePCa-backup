@@ -3,44 +3,44 @@ Single-cell and spatial RNA sequencing identify the age-associated divergent mic
 
 ![Fig 8-01](https://github.com/user-attachments/assets/41d49f12-a669-4520-94ec-c2cd65263ba9)
 
-Brief descriptions of scripts:
+The scripts involved in this study are available as followed (each R file has a detailed bibliography that can be identified by Rstudio):
 
-1.data_processing.R:
+1.data_processing.R
 
-The quality control of scRNA-seq matrix.
+Creating Seurat objects from raw matrix, and carrying out quality control.
 
 2.harmony.R
 
-Batch effect removal and clustering based on harmony, and general celltype annotation.
+Removing batch effects using Harmony. Clustering, annotation and functional analysis of all cells.
 
-3.Doublet_and_inferCNV.R
+3.Doublet and InferCNV.R
 
-Doublets removal through DoubletFinder, and inferCNV-based malignant epithelial cells identification.
+Removing doublets and infering malignant epithelia with inferCNV.
 
 4.1.Epi_NMF.R
 
-Extract transcriptional meta-programs of malignant epithelial cells using cNMF. Subsequent functional and clinical analyses for malignant epithelial cells, and corresponding validation with publicly available data.
+Deciphering the tumor heterogeneity with NMF. Batch effect removing, clustering, annotation, trajectory analysis, functional analysis, and all other analyses concerning malignant epithelia.
 
 4.2.Myeloid_harmony.R
 
-Clustering, annotation of myeloid cells. Functional analyses, clinical analyses of myeloid cells, and corresponding validation with publicly available data.
+Batch effect removing, clustering, annotation, trajectory analysis, functional analysis, and all other analyses concerning myeloid cells.
 
 4.3.Tcell_harmony.R
 
-Clustering, annotation of T cells. Functional analyses, clinical analyses of T cells.
+Batch effect removing, clustering, annotation, trajectory analysis, functional analysis, and all other analyses concerning T and NK cells.
 
 4.4.Fibro_harmony.R
 
-Clustering, annotation of mesenchymal cells. Functional analyses, clinical analyses of mesenchymal cells, and corresponding validation with publicly available data.
+Batch effect removing, clustering, annotation, trajectory analysis, functional analysis, and all other analyses concerning mesenchymal cells.
 
 5.1.CellCommunication.R
 
-Inter-cellular communication analyses between malignant epithelial cells, myeloid cells and T cells through CellChat and CellPhoneDB.
+Cell communication analyses between tumor cells and macrophages, macrophages and T cells, etc.
 
 5.2.CellCommunication_epi_all.R
 
-Cellular communication analyses dissecting the mechanism of TME cells regulating AR-MP of malignant epithelial cells through NicheNet.
+Cell communication analyses inferring how microenvironment cells regulating tumor cells, through NicheNet.
 
 6.ST.R
 
-ST-seq data analyses and the spatial validation for findings of scRAN-seq analyses.
+Clustering, annotation, and all other analysis concerning spatial transcriptomes.
